@@ -1,16 +1,95 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Tables and Media</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        h2 {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 1.5em;
+        }
+        ol {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        li {
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Semantic Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>John Doe</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Jane Smith</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Mark Taylor</td>
+            </tr>
+        </tbody>
+    </table>
 
+    <!-- Heading -->
+    <h2>List of Medias</h2>
+
+    <!-- Ordered List -->
+    <ol>
+        <!-- First Item: Image -->
+        <li>
+            <img src="https://picsum.photos/id/123/200/300" alt="Random Image from Picsum" width="200" height="300">
+        </li>
+
+        <!-- Second Item: Video -->
+        <li>
+            <video width="400" controls>
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </li>
+
+        <!-- Third Item: Audio -->
+        <li>
+            <audio controls>
+                <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+                Your browser does not support the audio tag.
+            </audio>
+        </li>
+    </ol>
 </body>
-
 </html>
